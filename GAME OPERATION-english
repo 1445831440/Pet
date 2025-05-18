@@ -1,0 +1,45 @@
+pet2.py（English Usage Guide） 
+
+1. Requirements
+Python 3.x
+
+Uses only standard libraries: json, random, os, time 
+
+
+2. Installation & Execution
+Place pet2.py in your chosen directory.
+
+Open a terminal and cd into that directory.
+
+Run:
+python pet2.py
+On startup, the script will look for game_save.json to load previous progress; if not found, you will be prompted to enter a new pet name. 
+
+
+3. Main Menu Options
+
+1. View pet status
+2. Feed pet (use an item from backpack)
+3. Enter adventure
+4. View backpack
+5. View completed learning
+6. Save progress and exit
+7. New Game (reset progress)
+View pet status: Displays Happiness, Hunger, Knowledge (all out of 100).
+
+Feed pet: Use items (“Sparkling Water”, “Biscuit”, “Hamburger”) from the backpack to restore status.
+
+Enter adventure: Answer English→Chinese translation questions. Correct answers increase knowledge and grant random rewards; incorrect answers yield no reward.
+
+View backpack: Lists current counts of each reward item.
+
+View completed learning: Shows all questions you have answered correctly.
+
+Save progress and exit: Serializes current game state to game_save.json and exits.
+
+New Game: Continue with the same or a new pet name, resetting all progress and stats. 
+
+
+4. Save File Details
+Filename: game_save.json
+On next launch, the script restores this state for seamless continuation. 
